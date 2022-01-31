@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Open+Sans:wght@300;400;700;800&display=swap');
 
+/** PSEUDO CLASS :root **/
 :root {
     --white:white;
     --lato: 'Lato', sans-serif;
@@ -7,6 +8,7 @@
     --bgcolor1: #f7f7f1;
 }
 
+/** STYLE PAR DEFAUT **/
 * {
     padding: 0;
     margin: 0;
@@ -26,6 +28,7 @@
     display: block;
 }
 
+/**  TITLE   **/
 h1 {
     position: absolute;
     color: var(--white);
@@ -36,7 +39,6 @@ h1 {
     text-align: center;
     font-size: 70px;
 }
-
 
 h2 {
     text-align: center;
@@ -57,6 +59,10 @@ h2.hey::before {
     font-weight: 600;
 }
 
+h2::before {
+
+}
+
 .lineh2::before {
     content: "________";
     display: inline-block;
@@ -66,6 +72,15 @@ h2.hey::before {
 
 h2.ourclients {
     margin-bottom: 80px;
+}
+
+h3.titleblog {
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 27px;
+    height: auto;
+    font-family: var(--opensans);
+    margin-bottom: 15px;
 }
 
 span.barreclients::after {
@@ -159,10 +174,6 @@ span.clientstxt2::before {
     color: #fff;
 }
 
-h2::before {
-
-}
-
 .boldtitle {
 font-weight: 600;
 }
@@ -173,7 +184,6 @@ font-weight: 600;
     display: flex;
 }
     
-
 .lighttitle {
     font-weight: 100;
     text-decoration: line-through;
@@ -259,8 +269,6 @@ p.about {
     grid-row: 1 / 2;
 }
 
-
-
 .parent {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -278,6 +286,7 @@ p.about {
     height: 55px;
     transform: translate(50%, 100%);
 }
+
 .heclem {
     grid-area: 2 / 2 / 4 / 4;
     background: url(/integration1/image/heclem.png) no-repeat;
@@ -285,12 +294,14 @@ p.about {
     height: 340px;
     transform: translateX(171px);
 }
+
 .altj {
     grid-area: 3 / 1 / 6 / 2;
     background: url(/integration1/image/altj.png);
     width: 370px;
     height: 420px;
 }
+
 .elegant {
     grid-area: 4 / 2 / 7 / 3;
     background: url(/integration1/image/elegant.png);
@@ -298,6 +309,7 @@ p.about {
     height: 420px;
     margin-top: 34px;
 }
+
 .shapelinelineline {
     grid-area: 5 / 3 / 6 / 4;
     background: url(/integration1/image/shapelinelineline.png);
@@ -305,12 +317,14 @@ p.about {
     height: 24px;
     transform: translateX(25%);
 }
+
 .magazine { 
     grid-area: 6 / 3 / 8 / 4; 
     background: url(/integration1/image/magazine.png);
     width: 370px;
     height: 560px;
 }
+
 .barre {
     grid-area: 6 / 1 / 7 / 2;
     background: url(/integration1/image/barre.png);
@@ -318,6 +332,7 @@ p.about {
     height: 152px;
     transform: translate(140px, 30px);
 }
+
 .argo {
     grid-area: 7 / 1 / 9 / 3;
     background: url(/integration1/image/argo.png);
@@ -333,6 +348,7 @@ span.textelabel {
     height: auto;
     width: auto;
 }
+
 span.label1 {
     font-weight: 600;
     font-size: 18px;
@@ -471,15 +487,6 @@ p.date {
     margin-bottom: 15px;
 }
 
-h3.titleblog {
-    text-transform: uppercase;
-    font-size: 30px;
-    line-height: 27px;
-    height: auto;
-    font-family: var(--opensans);
-    margin-bottom: 15px;
-}
-
 p.paragrapheblog {
     font-family: var(--lato);
     font-size: 19px;
@@ -580,31 +587,37 @@ p.adresse {
     width: 25px;
     height: 20px;
 }
+
 .facebook {
     background: url(/integration1/image/logofb.png);
     width: 14px;
     height: 25px;
 }
+
 .linkedin {
     background: url(/integration1/image/logolinkedin.png);
     width: 25px;
     height: 25px;
 }
+
 .vimeo {
     background: url(/integration1/image/logovimeo.png);
     width: 25px;
     height: 22px;
 }
+
 .behance {
     background: url(/integration1/image/logobehance.png);
     width: 31px;
     height: 22px;
 }
+
 .map {
     background: url(/integration1/image/map.png);
     width: 669px;
     height: 400px;
 }
+
 .flex-items3:nth-child(1) {
     display: block;
     flex-grow: 0;
